@@ -8,7 +8,8 @@
     <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
 
     <title>Covid-19</title>
-    
+    <!-- font -->
+    <link rel="stylesheet" href="fonts/fonts.css">
     <!-- video.js -->
     <link href="css/video-js.css" rel="stylesheet" />
      <!-- Owl Carosel -->
