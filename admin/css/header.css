@@ -1,0 +1,87 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: Verdana, sans-serif;
+    scroll-behavior: smooth;
+  }
+  #header{
+    height: 89px;
+    white-space: nowrap;
+    background-color: #ae462e;
+  }
+  .fa-level-down-alt{
+    position: absolute;
+    left: 95%;
+    top: 5%;
+    color: #f5ce20;
+    font-size: 28px;
+}
+  .shell1 {
+    width: 988px;
+    margin-left: 94px;
+    width: 1200px;
+   }
+   #top {
+    height: 53px;
+   }
+   #top h1{
+       font-size: 25px;
+       font-weight: bold;
+       color: #fff;
+       padding-top: 20px;
+   }
+   #top-navigation {
+    float: right;
+    white-space: nowrap;
+    color: #fff;
+   } 
+   #navigation {
+    height: 36px;
+   }
+   #navigation ul {
+    list-style-type: none;
+  }
+   #navigation ul li a {
+    line-height: 36px;
+    color: #907525;
+    text-decoration: none;
+    margin: 0px 5px;
+    font-size: 16px;
+    }
+    #navigation ul li a{
+    float: left;
+    height: 36px;
+    padding: 0 0 0 15px;
+    background-color: #f5ce20;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    }
+    #navigation ul li a:hover{
+        background-color: #f9ebae;
+    }
+    #navigation ul li a.active_login{
+        background-color: #f9ebae;
+    }
+    #navigation ul li a span {
+        background-position: right 0;
+        padding: 0 15px 0 0;
+        font-weight: 600;
+      }
+      #navigation ul li a {
+        line-height: 36px;
+        color: #ae462e;
+        text-decoration: none;
+      }
+      #top-navigation p{
+        color: #fff;
+        font-size: 20px;
+        padding-bottom: 5px;
+      }
+      #top-navigation a{
+          color: #fff;
+          font-size: 10px;
+          margin-left: 100px;
+      }
+      

@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    text-transform: capitalize;
+}
+:root{
+    --red: rgba(255, 79, 91, 1);
+}
+*::selection{
+    background-color: var(--red);
+    color: #fff;
+}
+/* doctor section starts */
+.doctor{
+    background: url(../images/about-background.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, .5);
+    margin-top: 5%;
+    margin-bottom: 2%;
+    min-height: 90vh;
+}
+
+.doctor .container .content{
+    display: flex;
+}
+.doctor .container .content .content1 img{
+    height: 90vh;
+    width: 90%;
+}
+.doctor .container .content .content2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    line-height: 3rem;
+}
+.doctor .container .content .content2 h1{
+    letter-spacing: 3px;
+    font-size: 32px;
+}
+.doctor .container .content .content2 h3{
+    letter-spacing: 2px;
+    font-size: 27px;
+}
+.doctor .container .content .content2 span{
+    color:var(--red);
+}
+.doctor .container .content .content2 .btn{
+    display: inline-block;
+    background-color: var(--red);
+    color: #fff;
+    width: 10rem;
+    padding: 6px 32px;
+    margin-top: 16px;
+    border-radius:2rem; 
+    border: none;
+}
+/* doctor-about starts */
+.doctor-about .about-para p{
+    text-align: center;
+    font-size: 48px;
+    color: #666;
+    font-weight: bold;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.doctor-about .about-para p span{
+    font-size: 48px;
+    color: var(--red);
+}
+.doctor-about .about-container{
+    display: flex;
+}
+.doctor-about .about-container .about-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.doctor-about .about-container .about-content .content-1{
+    margin-left: 15%;
+    display: flex;
+    flex-direction: column;
+}
+.doctor-about .about-container .about-content .content-1 .about-box{
+    margin: 14px 0px;
+    padding-left: 34px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 8px;
+} 
+.doctor-about .about-container .about-content .content-1 .about-box:hover{
+    box-shadow:10px 5px 20px rgba(138, 81, 81, 0.575);
+    transition: all 0.3s linear;
+} 
+.about-container .about-content .content-1 .about-box i{
+    color: var(--red);
+    font-size: 48px;
+}
+.about-container .about-content .content-1 .about-box h2{
+    letter-spacing: 3px;
+}
+.about-container .about-content .content-1 .about-box p{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+}
+/* doctor-about ends */
+/* gallery starts */
+.our-gallery .about-para p{
+    text-align: center;
+    font-size: 48px;
+    font-weight: bold;
+    color: #666;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.our-gallery .about-para p span{
+    font-size: 48px;
+    color: var(--red);
+}
+.gallery-content .gallery-content1{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+}
+.gallery-content .gallery-content1 .images{
+    width: 100%;
+}
+.gallery-content .gallery-content1 img{
+    width: 90%;
+    height: 100%;
+    padding: 3%;
+    border-radius: 50px;
+    box-shadow:10px 5px 20px rgba(138, 81, 81, 0.575);
+}
+.gallery-content .gallery-content1 img:hover{
+    padding: 0%;
+    width: 95%;
+    height: 100%;
+    box-shadow: none;
+    transition: all 0.3s linear;
+}
+.gallery-content .gallery-content2{
+    display: flex;
+    flex-direction: row;
+}
+/* gallery ends */
+/* doctor section starts */
+.doctors{
+    background: url(../images/about-background.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.doctors .about-para p{
+    text-align: center;
+    font-size: 48px;
+    font-weight: bold;
+    color: #666;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.doctors .about-para p span{
+    font-size: 48px;
+    color: var(--red);
+}
+.doctors .box-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.doctors .box-container .box{
+    border-radius: 5px;
+    box-shadow:0px 5px 20px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    margin: 1.5rem;
+    text-align: center;
+    background: #fff;
+    width: 23rem;
+}
+.doctors .box-container .box:hover{
+    position: relative;
+
+bottom: 10px;
+    border-radius: 10%;
+    box-shadow:10px 20px 40px var(--red);
+    transition: all 0.3s linear;
+}
+.doctors .box-container .box img{
+    margin: 1rem;
+    border-radius: 50%;
+    height: 15rem;
+    object-fit: cover;
+}
+.doctors .box-container .box h3{
+    font-size: 22px;
+    margin:2px 0;
+    color: var(--red);
+}
+.doctors .box-container .box .share{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid rgba(0, 0, 0, .5);
+    margin-top: 15px;
+}
+.doctors .box-container .box .share a{
+    border-radius: 50%;
+    font-size: 35px;
+    color: var(--red);
+    margin: 0px 20px;
+    margin-top: 15px;
+}
+.doctors .box-container .box .share a:hover{
+    transform: rotate(180deg);
+    transition: all 0.3s linear;
+}
+/* doctor section ends */

@@ -1,0 +1,309 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* ------------------------------ Main ------------------------------ */
+.main {
+  width: 100%;
+  background: url(../images/about-background.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+.main h1 {
+  text-align: center;
+  color: rgb(38, 207, 230);
+  font-size: 2.4rem;
+  letter-spacing: 5px;
+}
+
+/* -------------x---------------- Main ---------------------x-------- */
+
+/* ------------------------------ Content ------------------------------ */
+
+.main .content {
+  margin-top: 28px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* -------------x---------------- Content ---------------------x-------- */
+
+/* ------------------------------ sdo/sndo ------------------------------ */
+.content .sdo,
+.content .sndo {
+  width: 40%;
+  background-image: linear-gradient(white 50%, rgba(182, 173, 173, 0.842));
+  box-shadow: 3px 4px 10px rgba(153, 147, 147, 0.842);
+  padding-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 15px rgba(189, 83, 83, 0.5);
+}
+.content .sdo {
+  margin-right: 100px;
+}
+.sdo .heading {
+  background-color: rgb(119, 119, 236);
+}
+.sndo .heading {
+  background-color: rgb(248, 107, 82);
+}
+.sdo .heading,
+.sndo .heading {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 13px;
+}
+.sdo .point1,
+.sdo .point3,
+.sndo .point1,
+.sndo .point3 {
+  display: flex;
+  box-sizing: border-box;
+}
+.sdo .point1 .image,
+.sdo .point3 .image,
+.sndo .point1 .image,
+.sndo .point3 .image {
+  width: 30%;
+  padding: 10px;
+  padding-top: 15px;
+}
+.sdo .point1 .txt,
+.sdo .point3 .txt,
+.sndo .point1 .txt,
+.sndo .point3 .txt {
+  width: 70%;
+  margin-top: 20px;
+  padding-right: 15px;
+}
+
+.sdo .point2,
+.sndo .point2 {
+  display: flex;
+  flex-direction: row-reverse;
+  box-sizing: border-box;
+  height: 25vh;
+}
+.sdo .point2 .image,
+.sndo .point2 .image {
+  width: 30%;
+  padding: 10px;
+  padding-top: 15px;
+}
+.sdo .point2 .txt,
+.sndo .point2 .txt {
+  width: 70%;
+  margin-top: 20px;
+  padding-left: 15px;
+}
+
+.point1 h2,
+.point2 h2,
+.point3 h2 {
+  letter-spacing: 2px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+/* -------------x---------------- sdo/sndo ---------------------x-------- */
+
+.point1 img,
+  .point2 img{
+    height: auto;
+    width: 75%;
+    margin-left: 16px;
+}
+
+.point1 p,
+ .point2 img{
+  color: black;
+  font-size: 0.8rem;
+}
+
+/* ----------------- Desktop -----------------*/
+@media (min-width: 1024px) and (max-width: 1100px) {
+  .main .content {
+    justify-content: space-evenly;
+  }
+  .content .sdo,
+  .content .sndo {
+    width: 40%;
+  }
+}
+
+/* ----------------- Tablet -----------------*/
+@media (min-width: 700px) and (max-width: 1023px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .content .sdo {
+    margin-right: 0;
+  }
+  .content .sdo,
+  .content .sndo {
+    width: 100%;
+  }
+  .sdo .point1 .txt,
+  .sdo .point3 .txt,
+  .sndo .point1 .txt,
+  .sndo .point3 .txt,
+  .sdo .point2 .txt,
+  .sndo .point2 .txt {
+    margin-top: 100px;
+  }
+  .content .sdo {
+    margin-bottom: 40px;
+  }
+  .content {
+    box-sizing: border-box;
+    padding: 20px;
+  }
+}
+
+/* ----------------- 530-650 -----------------*/
+@media (min-width: 530px) and (max-width: 650px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .content .sdo {
+    margin-right: 0;
+  }
+  .content .sdo,
+  .content .sndo {
+    width: 100%;
+  }
+  .sdo .point1 .txt,
+  .sdo .point3 .txt,
+  .sndo .point1 .txt,
+  .sndo .point3 .txt,
+  .sdo .point2 .txt,
+  .sndo .point2 .txt {
+    margin-top: 15px;
+  }
+  .content .sdo {
+    margin-bottom: 40px;
+  }
+  .content {
+    box-sizing: border-box;
+    padding: 20px;
+  }
+}
+/* ----------------- 651-767 -----------------*/
+@media (min-width: 651px) and (max-width: 767px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .content .sdo {
+    margin-right: 0;
+  }
+  .content .sdo,
+  .content .sndo {
+    width: 100%;
+  }
+  .sdo .point1 .txt,
+  .sdo .point3 .txt,
+  .sndo .point1 .txt,
+  .sndo .point3 .txt,
+  .sdo .point2 .txt,
+  .sndo .point2 .txt {
+    margin-top: 60px;
+  }
+  .content .sdo {
+    margin-bottom: 40px;
+  }
+  .content {
+    box-sizing: border-box;
+    padding: 20px;
+  }
+}
+
+/* ----------------- 360-529 -----------------*/
+
+@media (min-width: 360px) and (max-width: 529px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .content .sdo {
+    margin-right: 0;
+  }
+  .content .sdo,
+  .content .sndo {
+    width: 100%;
+  }
+  .content .point3,
+  .content .point1,
+  .content .point2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .content .sdo {
+    margin-bottom: 40px;
+  }
+  .content {
+    box-sizing: border-box;
+    padding: 20px;
+  }
+  .point1 h2,
+  .point2 h2,
+  .point3 h2 {
+    font-size: 1rem;
+  }
+}
+
+/* ----------------- 0-359 -----------------*/
+@media (max-width: 359px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .content .sdo {
+    margin-right: 0;
+  }
+  .content .sdo,
+  .content .sndo {
+    width: 100%;
+  }
+  .content .point3,
+  .content .point1,
+  .content .point2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .content .sdo {
+    margin-bottom: 40px;
+  }
+  .content {
+    box-sizing: border-box;
+    padding: 20px;
+  }
+  .point1 h2,
+  .point2 h2,
+  .point3 h2 {
+    font-size: 1rem;
+  }
+  .sdo .heading h2,
+  .sndo .heading h2 {
+    font-size: 1rem;
+  }
+  .main h1 {
+    font-size: 1.5rem;
+  }
+}

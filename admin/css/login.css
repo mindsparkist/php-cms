@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.admin{
+    height: 100vh;
+    background: linear-gradient(to bottom,#f9544c 50%,#090c31 50%);
+    width: 100vw;
+}
+.admin .login{
+    width: 400px;
+    padding: 40px 30px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 8px;
+    box-shadow: 0 20px 50px rgba(0, 5, 24, 0.4);
+    background-color: #a9b2da;
+}
+.admin .login h2{
+    text-align: center;
+    background-color: #2e26a7;
+    color: white;
+    padding: 12px 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.admin .login form .input{
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0px;
+}
+.admin .login form .input i{
+    color: #fff;
+    padding: 10px 14px;
+    background-color: #4c6cf9;
+}
+.admin .login form .input input{
+    padding: 10px;
+    border: none;
+    padding-left: 15px;
+    margin-left: 5px;
+    width: 100%;
+}
+#mainak{
+    font-size: 20px;
+    padding: 10px;
+    color: rgb(206, 44, 44);
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+}

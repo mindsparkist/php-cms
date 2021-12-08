@@ -1,0 +1,152 @@
+.typedjs {
+  font-size: 1.6em;
+  font-weight: 500;
+  margin-left: 35%;
+}
+#cen {
+  margin-top: 95px;
+}
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+.container-card {
+  width: 100%;
+  height: 50vh;
+  margin-top: 20px;
+  padding: 30px;
+  background: #fff;
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+}
+.circle {
+  width: 200px;
+  height: 200px;
+  background: url(../images/hos1.jpg);
+  background-size: cover;
+  border-radius: 50%;
+  float: left;
+  shape-outside: none;
+  margin: 40px 30px 30px 0;
+}
+.circle1 {
+  width: 200px;
+  height: 200px;
+  background: url(../images/HOSPITAL-20X20-1-960x750.jpg);
+  background-size: cover;
+  border-radius: 50%;
+  float: left;
+  shape-outside: none;
+  margin: 40px 30px 30px 0;
+}
+.circle2 {
+  width: 200px;
+  height: 200px;
+  background: url(../images/20210320_104632.jpg);
+  background-size: cover;
+  border-radius: 50%;
+  float: left;
+  shape-outside: none;
+  margin: 40px 30px 30px 0;
+}
+.circle3 {
+  width: 200px;
+  height: 200px;
+  background: url(../images/mhc-building.jpg);
+  background-size: cover;
+  border-radius: 50%;
+  float: left;
+  shape-outside: none;
+  margin: 40px 30px 30px 0;
+}
+.circle5 {
+  width: 200px;
+  height: 200px;
+  background: url(../images/balabone.jpg);
+  background-size: cover;
+  border-radius: 50%;
+  float: left;
+  shape-outside: none;
+  margin: 40px 30px 30px 0;
+}
+.circle6 {
+  width: 200px;
+  height: 200px;
+  background: url(../images/motherandchild.jpg);
+  background-size: cover;
+  border-radius: 50%;
+  float: left;
+  shape-outside: none;
+  margin: 40px 30px 30px 0;
+}
+.card {
+  margin-top: 20px;
+  padding: 0;
+  text-align: calc();
+  line-height: 22px;
+}
+.dist {
+  font-style: normal;
+  text-decoration: underline;
+  padding-bottom: 5px;
+  font-weight: 800;
+}
+.muted {
+  opacity: 0.5;
+  padding-bottom: 5px;
+  font-weight: bold;
+}
+.lead {
+  opacity: 1.2;
+  padding-bottom: 5px;
+  font-weight: bold;
+}
+.typeofvaccine {
+  padding-bottom: 5px;
+  font-weight: bold;
+}
+.btn {
+  margin-top: 20px;
+  background-color: white;
+  color: black;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  float: right;
+}
+.info {
+  border-color: #2196f3;
+  color: dodgerblue;
+}
+
+.info:hover {
+  background: #2196f3;
+  color: white;
+  transition: background-color 0.25s linear 0s;
+}
+#map-canvas {
+  width: 100%;
+  height: 40vh;
+  background-color: black;
+  margin-top: 20px;
+}
