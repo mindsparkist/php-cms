@@ -8,12 +8,13 @@
             list($title1,$sub_title,$img1_back,$title2,$img2,$q1,$q1a,$q2,$q2a,$q3,$q3a,$img3,$link1,$img4_back,$img5,$sub_text1,$sub_text2,$sub_text3,$link2,$title3,$img6_back)=mysqli_fetch_row($sql);
           ?>
     <!-- home section starts -->
-    <section id="home" class="home">
+    <section class="home" id="home" style="background-image: url(<?php echo"$img1_back";?>);">
         <div class="content">
             <h1><?php echo"$title1";?></h1> 
             <h3><?php echo"$sub_title";?></h3>
             <div><a href="#" onclick="toggle_video()"><span class="fas fa-play-circle"></span></a></div>
         </div>
+
         <div class="covid19_video">
             <video  id="my-video"
                 class="video-js"
@@ -21,10 +22,10 @@
                 preload="auto"
                 width="800"
                 height="500"
-                poster="MY_VIDEO_POSTER.jpg"
                 data-setup="{}"
             >
             <source src="video/covid19_video.mp4" type="video/mp4" />
+            
          <p class="vjs-no-js">
              To view this video please enable JavaScript, and consider upgrading to a
              web browser that
