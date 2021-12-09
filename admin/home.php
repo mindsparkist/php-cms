@@ -6,10 +6,7 @@
       $title1 = $_POST['title1'];
 
       $sub_title = $_POST['sub_title'];
-      echo '<pre>'
-      print_r($_FILES['img1_back']);
-      exit
-      echo '</pre>'      
+            
       if(isset($_FILES['img1_back'])) {
         $img1_back = $_FILES['img1_back'] || null;
         $img1_backPath = '';
