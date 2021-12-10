@@ -8,7 +8,7 @@
             list($title1,$sub_title,$img1_back,$title2,$img2,$q1,$q1a,$q2,$q2a,$q3,$q3a,$img3,$link1,$img4_back,$img5,$sub_text1,$sub_text2,$sub_text3,$link2,$title3,$img6_back)=mysqli_fetch_row($sql);
           ?>
     <!-- home section starts -->
-    <section class="home" id="home" style="background-image: url(<?php echo"$img1_back";?>);">
+    <section class="home" id="home" style="background-image: url(<?php echo'admin/upload/' . "$img1_back";?>);">
         <div class="content">
             <h1><?php echo"$title1";?></h1> 
             <h3><?php echo"$sub_title";?></h3>

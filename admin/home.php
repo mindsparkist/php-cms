@@ -8,12 +8,17 @@
         $file_name = $_FILES['img1_back']['name'];
         $file_tmp = $_FILES['img1_back']['tmp_name'];
         move_uploaded_file($file_tmp,"upload/".$file_name);
-      } else {
-          
-      }
+      } 
+
+      if (isset($_FILES['img2'])) {
+        $file_name1 = $_FILES['img2']['name'];
+        $file_tmp = $_FILES['img2']['tmp_name'];
+        move_uploaded_file($file_tmp,"upload/".$file_name1);
+      } 
 
       $title1 = $_POST['title1'];
       $sub_title = $_POST['sub_title'];
+      $x=$_POST['img1_back'];
       $title2 = $_POST['title2']; 
       $q1 = $_POST['q1'];
       $q1a = $_POST['q1a'];
@@ -28,7 +33,7 @@
       $link2 = $_POST['link2'];
       $title3 = $_POST['title3'];
 
-    $query = "UPDATE `home` SET `title1`='$title1',`sub_title`='$sub_title',`img1_back`='admin/upload/$file_name',`title2`='$title2',`q1`='$q1',`q1a`='$q1a',`q2`='$q2',`q2a`='$q2a',`q3`='$q3',`q3a`='$q3a',`link1`='$link1',`sub_text1`='$sub_text1',`sub_text2`='$sub_text2',`sub_text3`='$sub_text3',`link2`='$link2',`title3`='$title3' WHERE id='1'";
+    $query = "UPDATE `home` SET `title1`='$title1',`sub_title`='$sub_title',`img1_back`='$file_name',`title2`='$title2',`img2`='$file_name1',`q1`='$q1',`q1a`='$q1a',`q2`='$q2',`q2a`='$q2a',`q3`='$q3',`q3a`='$q3a',`link1`='$link1',`sub_text1`='$sub_text1',`sub_text2`='$sub_text2',`sub_text3`='$sub_text3',`link2`='$link2',`title3`='$title3' WHERE id='1'";
     $result = mysqli_query($conn,$query);
     
     header('Location: home.php');
@@ -67,13 +72,6 @@
               <div class="form-group">
                 <label>Background Image1</label>
                 <input type="file" class="form-control" name="img1_back"/>
-                <div class="not-allowed">
-                <input
-                  name="img1_back"
-                  type="text"
-                  class="form-control not-allowed"
-                  value="<?php echo"Image Name : $img1_back";?>"
-                /></div>
               </div>
               <!-- title2 -->
               <div class="form-group">
@@ -88,7 +86,7 @@
               <!-- img2 -->
               <div class="form-group">
                 <label>Image2</label>
-                <input type="file" class="form-control" name="image" />
+                <input type="file" class="form-control" name="img2" />
               </div>
               <!-- q1 -->
               <div class="form-group">
