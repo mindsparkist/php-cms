@@ -3,28 +3,18 @@
     include 'partials/header.php';
     include 'connection_admin.php';
     if(isset($_POST['update'])){
-      $title1 = $_POST['title1'];
 
-      $sub_title = $_POST['sub_title'];
-      echo '<pre>'
-      print_r($_FILES['img1_back']);
-      exit
-      echo '</pre>'      
-      if(isset($_FILES['img1_back'])) {
-        $img1_back = $_FILES['img1_back'] || null;
-        $img1_backPath = '';
-        $img1_backPath = 'uploads/' . $img1_back['name'];
-        move_uploaded_file($img1_back['tmp_name'], "../uploads/" . $img1_back['name']);
+      if (isset($_FILES['img1_back'])) {
+        $file_name = $_FILES['img1_back']['name'];
+        $file_tmp = $_FILES['img1_back']['tmp_name'];
+        move_uploaded_file($file_tmp,"upload/".$file_name);
+      } else {
+          
       }
 
-      $title2 = $_POST['title2'];
-
-     if(isset($_FILES['img2'])){
-       $img2 = $_FILES['img2'] || null;
-       $img2_Path = '';
-       $img2_Path = 'uploads/' . $img2['name'];
-       move_uploaded_file($img2['tmp_name'], "../uploads/" . $img2['name']);
-     }
+      $title1 = $_POST['title1'];
+      $sub_title = $_POST['sub_title'];
+      $title2 = $_POST['title2']; 
       $q1 = $_POST['q1'];
       $q1a = $_POST['q1a'];
       $q2 = $_POST['q2'];
@@ -38,7 +28,7 @@
       $link2 = $_POST['link2'];
       $title3 = $_POST['title3'];
 
-    $query = "UPDATE `home` SET `title1`='$title1',`sub_title`='$sub_title',`img1_back`='$img1_backPath',`title2`='$title2',`img2` = '$img2_Path',`q1`='$q1',`q1a`='$q1a',`q2`='$q2',`q2a`='$q2a',`q3`='$q3',`q3a`='$q3a',`link1`='$link1',`sub_text1`='$sub_text1',`sub_text2`='$sub_text2',`sub_text3`='$sub_text3',`link2`='$link2',`title3`='$title3' WHERE id='1'";
+    $query = "UPDATE `home` SET `title1`='$title1',`sub_title`='$sub_title',`img1_back`='admin/upload/$file_name',`title2`='$title2',`q1`='$q1',`q1a`='$q1a',`q2`='$q2',`q2a`='$q2a',`q3`='$q3',`q3a`='$q3a',`link1`='$link1',`sub_text1`='$sub_text1',`sub_text2`='$sub_text2',`sub_text3`='$sub_text3',`link2`='$link2',`title3`='$title3' WHERE id='1'";
     $result = mysqli_query($conn,$query);
     
     header('Location: home.php');
@@ -74,12 +64,16 @@
                 />
               </div>
               <!-- image  -->
-          <?php if (!empty($img1_back)): ?>
-            <img src="<?php echo "$img1_back" ?>" class="product-img-view">
-           <?php endif; ?>
               <div class="form-group">
                 <label>Background Image1</label>
-                <input type="file" accept="image/png, image/jpeg" class="form-control" name="img1_back" />
+                <input type="file" class="form-control" name="img1_back"/>
+                <div class="not-allowed">
+                <input
+                  name="img1_back"
+                  type="text"
+                  class="form-control not-allowed"
+                  value="<?php echo"Image Name : $img1_back";?>"
+                /></div>
               </div>
               <!-- title2 -->
               <div class="form-group">
@@ -92,12 +86,9 @@
                 />
               </div>
               <!-- img2 -->
-          <?php if (!empty($img2)): ?>
-            <img src="<?php echo "$img2" ?>" class="product-img-view">
-           <?php endif; ?>
               <div class="form-group">
                 <label>Image2</label>
-                <input type="file" accept="image/png, image/jpeg" class="form-control" name="img2" />
+                <input type="file" class="form-control" name="image" />
               </div>
               <!-- q1 -->
               <div class="form-group">

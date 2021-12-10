@@ -5,13 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Panel</title>
-		<link rel="stylesheet" href="./css/header.css" />
-		<link rel="stylesheet" href="./css/footer.css" />
-		<link rel="stylesheet" href="./css/content.css" />
-		<link rel="stylesheet" href="./css/contact.css" />
-		<!-- <link rel="stylesheet" href="./css/bootstrap.min.css" /> -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
-    <link rel="stylesheet" href="css/login.css">  
+		<link rel="stylesheet" href="./css/main.css" /> 
 </head>
 <body>
     <div id="header">
