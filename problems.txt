@@ -24,12 +24,18 @@ fix Doctor Image Change
 browse botton ar lekha change
 fix Image UpLoaded Feature Devolop
 Fix image path store
-Apostropies Fix
+fix admin font offline
+fix open link into a new tab
+admin password hashing
+fix preload
+loading animation on every page
+fix added darkmode
+fix poster desgin for video
 .php extention hide 
-preload
-darkmode
-how to use gitignore
+make website responsive
 Use WebPack For Converting Multiple Js Files To One Js File 
+Apostropies Fix
+how to use gitignore
 dynamically update links of domain and foldername
 --------------------------------------------
 RewriteEngine on

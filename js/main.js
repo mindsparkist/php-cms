@@ -1,3 +1,16 @@
+// loader
+ $(window).on("load", function () {
+   $(".loader-container").fadeOut(1000);
+ });
+//video
+const toggle_video = () => {
+  const covid19_video = document.querySelector(".covid19_video");
+  const video = document.querySelector("video");
+  covid19_video.classList.toggle("active");
+  video.pause();
+  video.currentTime = 0;
+};
+//slider
 $(".slider").owlCarousel({
     loop: true,
     autoplay: true,
@@ -33,3 +46,21 @@ $(".slider").owlCarousel({
       }
     });
   }
+ 
+  // darkmode
+  const options = {
+    bottom: "64px", // default: '32px'
+    right: "unset", // default: '32px'
+    left: "32px", // default: 'unset'
+    time: "0.5s", // default: '0.3s'
+    mixColor: "#fff", // default: '#fff'
+    backgroundColor: "#fff", // default: '#fff'
+    buttonColorDark: "#100f2c", // default: '#100f2c'
+    buttonColorLight: "#fff", // default: '#fff'
+    saveInCookies: true, // default: true,
+    label: "🌓", // default: ''
+    autoMatchOsTheme: true, // default: true
+  };
+
+  const darkmode = new Darkmode(options);
+  darkmode.showWidget();

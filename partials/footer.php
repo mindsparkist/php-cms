@@ -43,7 +43,7 @@
         </div>
         <div class="footer-heading">
             <h1>
-                Created by <span>Shuvradip,Mainak,Susmita,Antara,Sibendu,Abhijit</span> &copy; copyright @ 2021 <a href="./admin/default.php"><span class="fas fa-key" id="admin_key"></span></a>
+                Created by <span>Shuvradip,Mainak,Susmita,Antara,Sibendu,Abhijit</span> &copy; copyright @ 2021 <a href="./admin/default.php" target="_blank"><span class="fas fa-key" id="admin_key"></span></a>
             </h1>
             <!-- <h1>
                 Created by <span>Shuvradip Chakraborty,Mainak Podder,Susmita Sarkar,Antara Kangsabanik,Sibendu Ghosh,Abhijit Mondal</span> &copy; copyright @ 2021

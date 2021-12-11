@@ -1,6 +1,1 @@
 ErrorDocument 404 http://localhost/MinorProject_Demo/404.php
-<IfModule mod_expires.c>
-    ExpiresActive On
-    ExpiresDefault “access plus 10 days”
-    ExpiresByType text/css “access plus 1 second”
-</IfModule>

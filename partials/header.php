@@ -16,6 +16,8 @@
      <link rel="stylesheet" href="css/owl.carousel.min.css"/>
     <!-- litebox -->
     <link rel="stylesheet" href="css/lightbox.min.css">
+    <!-- darkmode -->
+    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
     
     <!-- custom css file link -->
     <link rel="stylesheet" href="css/main.css">

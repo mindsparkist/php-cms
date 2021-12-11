@@ -6,9 +6,11 @@
             include 'connection_admin.php';
           $sql= mysqli_query($conn,"SELECT `title1`, `sub_title`, `img1_back`, `title2`, `img2`, `q1`, `q1a`, `q2`, `q2a`, `q3`, `q3a`, `img3`, `link1`, `img4_back`, `img5`, `sub_text1`, `sub_text2`, `sub_text3`, `link2`, `title3`, `img6_back` FROM `home` WHERE `id`=1");
             list($title1,$sub_title,$img1_back,$title2,$img2,$q1,$q1a,$q2,$q2a,$q3,$q3a,$img3,$link1,$img4_back,$img5,$sub_text1,$sub_text2,$sub_text3,$link2,$title3,$img6_back)=mysqli_fetch_row($sql);
-          ?>
+?>
+<!-- loader -->
+<div class="loader-container"><div class="loader"></div></div>
     <!-- home section starts -->
-    <section class="home" id="home" style="background-image: url(<?php echo'admin/upload/' . "$img1_back";?>);">
+    <section class="home" id="home" style="background-image: url(<?php echo'admin/upload/' . "$img1_back";?>); isolation: isolate;">
         <div class="content">
             <h1><?php echo"$title1";?></h1> 
             <h3><?php echo"$sub_title";?></h3>
@@ -22,6 +24,7 @@
                 preload="auto"
                 width="800"
                 height="500"
+                poster="images/apollo.jpg"
                 data-setup="{}"
             >
             <source src="video/covid19_video.mp4" type="video/mp4" />
