@@ -2,6 +2,8 @@
     $page = 'precaution';
     include 'partials/header.php';
 ?>
+<!-- load -->
+    <div class="loader-container"><div class="loader"></div></div>
 <div class="main">
         <!--Heading-->
         <div class="heading">

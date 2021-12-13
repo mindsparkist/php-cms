@@ -1,6 +1,6 @@
 // loader
  $(window).on("load", function () {
-   $(".loader-container").fadeOut(1000);
+   $(".loader-container").fadeOut(5000);
  });
 //video
 const toggle_video = () => {

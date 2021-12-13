@@ -31,10 +31,12 @@ fix preload
 loading animation on every page
 fix added darkmode
 fix poster desgin for video
+Apostropies Fix
+image uploading problem 
+about us a picture add 
 .php extention hide 
 make website responsive
 Use WebPack For Converting Multiple Js Files To One Js File 
-Apostropies Fix
 how to use gitignore
 dynamically update links of domain and foldername
 --------------------------------------------

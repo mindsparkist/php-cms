@@ -2,8 +2,10 @@
     $page = 'symptoms';
     include 'partials/header.php';
 ?>  
+<!-- load -->
+    <div class="loader-container"><div class="loader"></div></div>
 <div class="container-fluid">
-      <p class="mt-15 headine">most common Symptoms</p>
+      <p class="mt-15 headine" style="margin-top: 84px;">most common Symptoms</p>
       <p class="mt-15 subtitle">
         COVID-19 affects different people in different ways
       </p>
