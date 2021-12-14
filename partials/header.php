@@ -24,10 +24,10 @@
 </head>
 <body>
     
-    <!-- header section start -->
+    <!-- header section start --> 
     <header class="header">
         <a href="index.php" class="logo">C<span class="fas fa-virus"></span>VID-19</a>
-        <nav class="navbar">
+        <nav class="navbar" id="navbar">
             <ul>
                 <li><a href="index.php" class="<?php if($page=='home'){echo 'act_cls';}?>">Home</a></li>
                 <li><a href="prevent.php" class="<?php if($page=='prevent'){echo 'act_cls';}?>">Prevent</a></li>
@@ -38,5 +38,8 @@
                 <li><a href="contact.php" class="<?php if($page=='contact'){echo 'act_cls';}?>">Contact</a></li>
             </ul>
         </nav>
+         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
     </header>
     <!-- header section end -->

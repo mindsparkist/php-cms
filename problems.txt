@@ -33,16 +33,10 @@ fix added darkmode
 fix poster desgin for video
 Apostropies Fix
 image uploading problem 
-about us a picture add 
+fix about us a picture add 
 .php extention hide 
 make website responsive
 Use WebPack For Converting Multiple Js Files To One Js File 
 how to use gitignore
 dynamically update links of domain and foldername
---------------------------------------------
-RewriteEngine on
-RewriteCond %{THE_REQUEST} /([^.]+)\.php [NC]
-RewriteRule ^ /%1 [NC,L,R]
-
-RewriteCond %{REQUEST_FILENAME}.php -f
-RewriteRule ^ %{REQUEST_URI}.php [NC,L]
+-----------------------------------------------------------

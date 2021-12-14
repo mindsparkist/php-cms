@@ -1,4 +1,4 @@
-       <!-- footer section starts -->
+ <!-- footer section starts -->
        <footer class="footer">
        <div class="container">
             <div class="row">

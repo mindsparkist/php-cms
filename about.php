@@ -8,9 +8,10 @@
   margin-top: 20px;
 }
 img {
-  height: auto;
-  max-width: 100%;
-  vertical-align: middle;
+    height: 21vw;
+    width: 100%;
+    object-fit: cover;
+    vertical-align: middle;
 }
 
 
@@ -89,7 +90,7 @@ p{
   <ul class="cards">
     <li class="cards_item">
       <div class="card">
-        <div class="card_image"><img src="https://picsum.photos/500/300/?image=10"></div>
+        <div class="card_image"><img src="https://picsum.photos/500/300/?image=5"></div>
         <div class="card_content">
           <h2 class="card_title">Shuvradip Chakraborty</h2>
           <p class="card_text">Shuvradip Chakraborty co-lead the Minnor Project team, with Mainak predominantly overseeing and managing the UI/UX and design aspects of The  projects.</p>
@@ -99,7 +100,7 @@ p{
     </li>
     <li class="cards_item">
       <div class="card">
-        <div class="card_image"><img src="https://picsum.photos/500/300/?image=5"></div>
+        <div class="card_image"><img src="./images/mainak.jpeg"></div>
         <div class="card_content">
           <h2 class="card_title">Mainak Podder</h2>
           <p class="card_text">Mainak, along with Shuvradip, co-leads the Minnor Project team. Mainak predominantly oversees and manages all aspects pertaining to development across The projects.</p>
@@ -109,7 +110,7 @@ p{
     </li>
     <li class="cards_item">
       <div class="card">
-        <div class="card_image"><img src="https://picsum.photos/500/300/?image=11"></div>
+        <div class="card_image"><img src="./images/abhi.jpeg"></div>
         <div class="card_content">
           <h2 class="card_title">Abhijit Mondal</h2>
           <p class="card_text">Partner, Head of Documentation & Analyst writting . Extensive history and product knoledge
@@ -131,7 +132,7 @@ Partner, Head of Documentation & Analyst writting . Extensive history and produc
     </li>
     <li class="cards_item">
       <div class="card">
-        <div class="card_image"><img src="https://picsum.photos/500/300/?image=17"></div>
+        <div class="card_image"><img src="./images/sus.jpeg"></div>
         <div class="card_content">
           <h2 class="card_title">Sushmita Sarkar</h2>
           <p class="card_text">Head of Design. Current Designed The precaution page </p>
@@ -140,7 +141,7 @@ Partner, Head of Documentation & Analyst writting . Extensive history and produc
     </li>
     <li class="cards_item">
       <div class="card">
-        <div class="card_image"><img src="https://picsum.photos/500/300/?image=2"></div>
+        <div class="card_image"><img src="./images/antara.jpeg"></div>
         <div class="card_content">
           <h2 class="card_title">Antara Kangsabanik</h2>
           <p class="card_text">Devoloped The Footer And proficent In html Devolopment</p>

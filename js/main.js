@@ -2,6 +2,15 @@
  $(window).on("load", function () {
    $(".loader-container").fadeOut(5000);
  });
+ // toggle
+ function myFunction() {
+  var x = document.getElementById("navbar");
+  if (x.className === "navbar") {
+    x.className += " responsive";
+  } else {
+    x.className = "navbar";
+  }
+}
 //video
 const toggle_video = () => {
   const covid19_video = document.querySelector(".covid19_video");

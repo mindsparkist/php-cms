@@ -12,7 +12,6 @@
                 <div class="content2">
                     <h1><span>stay</span>safe,<span>stay</span>healthy.</h1>
                     <h3>caring for your life</h3>
-                    <a href="#"><button class="btn">learn more</button></a>
                 </div>
             </div>
         </div>

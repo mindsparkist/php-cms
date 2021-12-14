@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 13, 2021 at 02:58 PM
+-- Generation Time: Dec 14, 2021 at 09:19 PM
 -- Server version: 10.4.20-MariaDB
 -- PHP Version: 7.4.22
 
@@ -20,6 +20,59 @@ SET time_zone = "+00:00";
 --
 -- Database: `cpdms`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `centreandmap`
+--
+
+CREATE TABLE `centreandmap` (
+  `id` int(10) NOT NULL,
+  `title1_auto` varchar(250) NOT NULL,
+  `cntr1_title1` varchar(100) NOT NULL,
+  `cntr1_cvc1` varchar(100) NOT NULL,
+  `cntr1_block1` varchar(100) NOT NULL,
+  `cntr1_cvcname1` varchar(100) NOT NULL,
+  `cntr1_cvct1` varchar(100) NOT NULL,
+  `cntr1_vaccinet1` varchar(100) NOT NULL,
+  `cntr1_desc1` varchar(250) NOT NULL,
+  `cntr2_title2` varchar(100) NOT NULL,
+  `cntr2_cvc2` varchar(100) NOT NULL,
+  `cntr2_block2` varchar(100) NOT NULL,
+  `cntr2_cvcname2` varchar(100) NOT NULL,
+  `cntr2_cvct2` varchar(100) NOT NULL,
+  `cntr2_vaccinet2` varchar(100) NOT NULL,
+  `cntr2_desc2` varchar(250) NOT NULL,
+  `cntr3_title3` varchar(100) NOT NULL,
+  `cntr3_cvc3` varchar(100) NOT NULL,
+  `cntr3_block3` varchar(100) NOT NULL,
+  `cntr3_cvcname3` varchar(100) NOT NULL,
+  `cntr3_cvct3` varchar(100) NOT NULL,
+  `cntr3_vaccinet3` varchar(100) NOT NULL,
+  `cntr3_desc3` varchar(250) NOT NULL,
+  `cntr4_title4` varchar(100) NOT NULL,
+  `cntr4_cvc4` varchar(100) NOT NULL,
+  `cntr4_block4` varchar(100) NOT NULL,
+  `cntr4_cvcname4` varchar(100) NOT NULL,
+  `cntr4_cvct4` varchar(100) NOT NULL,
+  `cntr4_vaccinet4` varchar(100) NOT NULL,
+  `cntr4_desc4` varchar(250) NOT NULL,
+  `cntr5_title5` varchar(100) NOT NULL,
+  `cntr5_cvc5` varchar(100) NOT NULL,
+  `cntr5_block5` varchar(100) NOT NULL,
+  `cntr5_cvcname5` varchar(100) NOT NULL,
+  `cntr5_cvct5` varchar(100) NOT NULL,
+  `cntr5_vaccinet5` varchar(100) NOT NULL,
+  `cntr5_desc5` varchar(250) NOT NULL,
+  `cntr6_title6` varchar(100) NOT NULL,
+  `cntr6_cvc6` varchar(100) NOT NULL,
+  `cntr6_block6` varchar(100) NOT NULL,
+  `cntr6_cvcname6` varchar(100) NOT NULL,
+  `cntr6_cvct6` varchar(100) NOT NULL,
+  `cntr6_vaccinet6` varchar(100) NOT NULL,
+  `cntr6_desc6` varchar(250) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -47,6 +100,57 @@ INSERT INTO `contact` (`id`, `name`, `age`, `email`, `mobile`, `symptoms`, `comm
 (3, 'Ayanava mondal', '23', 'ayanava@gmail.com', '56489532', 'Cold,Fever,Difficulty in Breath,Feeling Weak', 'Help me!'),
 (4, 'Shuvradip Chakraborty', '20', 'shuvradip007@gmail.com', '8005688000', 'Cold', 'Contact Plese...'),
 (6, 'pradipta saha', '18', 'xxx@gmail.com', '100', 'Cold,Fever', 'i am feeling weak');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `doctors`
+--
+
+CREATE TABLE `doctors` (
+  `id` int(10) NOT NULL,
+  `img_back1` varchar(250) NOT NULL,
+  `img1` varchar(250) NOT NULL,
+  `subtitle1` varchar(100) NOT NULL,
+  `servece_title1` varchar(100) NOT NULL,
+  `service_subtitle1` varchar(100) NOT NULL,
+  `servece_title2` varchar(100) NOT NULL,
+  `servece_subtitle2` varchar(100) NOT NULL,
+  `servece_title3` varchar(100) NOT NULL,
+  `servece_subtitle3` varchar(100) NOT NULL,
+  `img2` varchar(250) NOT NULL,
+  `gallary_img1` varchar(250) NOT NULL,
+  `gallary_img2` varchar(250) NOT NULL,
+  `gallary_img3` varchar(250) NOT NULL,
+  `gallary_img4` varchar(250) NOT NULL,
+  `gallary_img5` varchar(250) NOT NULL,
+  `gallary_img6` varchar(250) NOT NULL,
+  `img_back2` varchar(250) NOT NULL,
+  `expt_img1` varchar(250) NOT NULL,
+  `expt_name1` varchar(100) NOT NULL,
+  `expt_qul1` varchar(100) NOT NULL,
+  `expt_add1` varchar(100) NOT NULL,
+  `expt_img2` varchar(250) NOT NULL,
+  `expt_name2` varchar(100) NOT NULL,
+  `expt_qul2` varchar(100) NOT NULL,
+  `expt_add2` varchar(100) NOT NULL,
+  `expt_img3` varchar(250) NOT NULL,
+  `expt_name3` varchar(100) NOT NULL,
+  `expt_qul3` varchar(100) NOT NULL,
+  `expt_add3` varchar(100) NOT NULL,
+  `expt_img4` varchar(250) NOT NULL,
+  `expt_name4` varchar(100) NOT NULL,
+  `expt_qul4` varchar(100) NOT NULL,
+  `expt_add4` varchar(100) NOT NULL,
+  `expt_img5` varchar(250) NOT NULL,
+  `expt_name5` varchar(100) NOT NULL,
+  `expt_qul5` varchar(100) NOT NULL,
+  `expt_add5` varchar(100) NOT NULL,
+  `expt_img6` varchar(250) NOT NULL,
+  `expt_name6` varchar(100) NOT NULL,
+  `expt_qul6` varchar(100) NOT NULL,
+  `expt_add6` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -262,9 +366,21 @@ INSERT INTO `symptoms` (`id`, `title1`, `desc1`, `point1`, `point2`, `point3`, `
 --
 
 --
+-- Indexes for table `centreandmap`
+--
+ALTER TABLE `centreandmap`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `contact`
 --
 ALTER TABLE `contact`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `doctors`
+--
+ALTER TABLE `doctors`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -296,10 +412,22 @@ ALTER TABLE `symptoms`
 --
 
 --
+-- AUTO_INCREMENT for table `centreandmap`
+--
+ALTER TABLE `centreandmap`
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT;
+
+--
 -- AUTO_INCREMENT for table `contact`
 --
 ALTER TABLE `contact`
   MODIFY `id` int(200) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+
+--
+-- AUTO_INCREMENT for table `doctors`
+--
+ALTER TABLE `doctors`
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `home`
