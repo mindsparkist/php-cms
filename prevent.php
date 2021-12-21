@@ -2,100 +2,48 @@
     $page = 'prevent';
     include 'partials/header.php';
 ?>
+<?php
+      include 'connection_admin.php';
+    $sql= mysqli_query($conn,"SELECT `subtitle1`, `title1`, `desc1`, `tctitle`, `tcsubtitle`, `tcimg`, `lctitle`, `lcsubtitle`, `lcimg`, `rctitle`, `rcsubtitle`, `rcimg`, `bctitle`, `bcsubtitle`, `bcimg`, `title2`, `pnp1`, `pnp2`, `pnp3`, `pnp4`, `pnp5`, `pnp6`, `pnp7`, `dsc1`, `dsc2`, `dsc3`, `dsc4`, `dsc5`, `dsc6`, `dsc7`, `pnpimg`, `title3`, `subtitle2`, `whimg1`, `whimg2`, `whimg3`, `whimg4`, `whimg5`, `whimg6`, `whst1`, `whst2`, `whst3`, `whst4`, `whst5`, `whst6` FROM `prevent` WHERE `id`=1");
+
+    list($subtitle1,$title1,$desc1,$tctitle,$tcsubtitle,$tcimg,$lctitle,$lcsubtitle,$lcimg,$rctitle,$rcsubtitle,$rcimg,$bctitle,$bcsubtitle,$bcimg,$title2,$pnp1,$pnp2,$pnp3,$pnp4,$pnp5,$pnp6,$pnp7,$dsc1,$dsc2,$dsc3,$dsc4,$dsc5,$dsc6,$dsc7,$pnpimg,$title3,$subtitle2,$whimg1,$whimg2,$whimg3,$whimg4,$whimg5,$whimg6,$whst1,$whst2,$whst3,$whst4,$whst5,$whst6)=mysqli_fetch_row($sql);
+?>
 <div class="containers">
-      <div class="subtitle text-center">How to Protect Yourself?</div>
-      <h2 class="title text-center">Prevention And advice</h2>
+      <div class="subtitle text-center"><?php echo"$subtitle1";?></div>
+      <h2 class="title text-center"><?php echo"$title1";?></h2>
       <p class="pt-3 text-center">
-        There is currently no vaccine to prevent coronavirus disease 2019
-        (COVID-19).
-        <strong
-          >The best way to prevent illness is to avoid being exposed to this
-          virus.</strong
-        >
-        Stay aware of the latest information on the COVID-19 outbreak, available
-        on the WHO website and through your national and local public health
-        authority.
+      <?php echo"$desc1";?>
       </p>
-
-      <!-- card -->
-      <!-- <div class="row1-container card-xyz">
-        <div class=" box-down cyan">
-          <h2>Wash your hands frequently</h2>
-          <p>
-            Regularly and thoroughly clean your hands with an alcohol-based hand
-            rub
-          </p>
-          <img class="img-size pt-7" src="./images/advice-a.png" alt="" />
-        </div>
-
-        <div class="boxs red">
-          <h2>Maintain social distancing</h2>
-          <p>
-            Maintain at least 1 metre (3 feet) distance between yourself &
-            anyone who is coughing or sneezing
-          </p>
-          <img class="img-size pt-7" src="./images/advice-b.png" alt="" />
-        </div>
-
-        <div class="boxs box-down blue">
-          <h2>Avoid touching face</h2>
-          <p>
-            Hands touch many surfaces and can pick up viruses. So, hands can
-            transfer the virus to your eyes
-          </p>
-          <img class="img-size pt-7" src="./images/advice-c.png" alt="" />
-        </div>
-      </div>
-      <div class="row2-container">
-        <div class="boxs orange">
-          <h2>Practice respiratory hygiene</h2>
-          <p>
-            Maintain good respiratory hygiene as covering your mouth & nose with
-            your bent elbow or tissue when
-          </p>
-          <img class="img-size pt-7" src="./images/advice-d.png" alt="" />
-        </div>
-      </div>
-    </div>
-    <div class="container section-content">
-      <div class="flex-box-div">
-        <div>
-          <h2 class="take-the-step">Take steps to protect others</h2> -->
-          <!-- card -->
       <div class="row1-container card-xyz">
         <div class="box box-down cyan">
-          <h2>Wash your hands frequently</h2>
+          <h2><?php echo"$tctitle";?></h2>
           <p>
-            Regularly and thoroughly clean your hands with an alcohol-based hand
-            rub
+          <?php echo"$tcsubtitle";?>
           </p>
           <img class="img-size pt-7" src="./images/advice-a.png" alt="" />
         </div>
 
         <div class="box red">
-          <h2>Maintain social distancing</h2>
+          <h2><?php echo"$lctitle";?></h2>
           <p>
-            Maintain at least 1 metre (3 feet) distance between yourself &
-            anyone who is coughing or sneezing
+          <?php echo"$lcsubtitle";?>
           </p>
           <img class="img-size pt-7" src="./images/advice-b.png" alt="" />
         </div>
 
         <div class="box box-down blue">
-          <h2>Avoid touching face</h2>
+          <h2><?php echo"$rctitle";?></h2>
           <p>
-            Hands touch many surfaces and can pick up viruses. So, hands can
-            transfer the virus to your eyes
+          <?php echo"$rcsubtitle";?>
           </p>
           <img class="img-size pt-7" src="./images/advice-c.png" alt="" />
         </div>
       </div>
       <div class="row2-container">
         <div class="box orange">
-          <h2>Practice respiratory hygiene</h2>
+          <h2><?php echo"$bctitle";?></h2>
           <p>
-            Maintain good respiratory hygiene as covering your mouth & nose with
-            your bent elbow or tissue when
+          <?php echo"$bcsubtitle";?>
           </p>
           <img class="img-size pt-7" src="./images/advice-d.png" alt="" />
         </div>
@@ -104,43 +52,33 @@
     <div class="containers section-content">
       <div class="flex-box-div">
         <div>
-          <h2 class="take-the-step">Take steps to protect others</h2>
+          <h2 class="take-the-step"><?php echo"$title2";?></h2>
           <!-- list -->
           <ul class="list-check">
             <li>
-              <strong>Stay home if you’re sick</strong> – Stay home if you are
-              sick, except to get medical care.
+              <strong><?php echo"$pnp1";?></strong> <?php echo"$dsc1";?>
             </li>
             <li>
-              <strong>Cover your mouth and nose</strong> – with a tissue when
-              you cough or sneeze (throw used tissues in the trash) or use the
-              inside of your elbow.
+              <strong><?php echo"$pnp2";?></strong> – <?php echo"$dsc2";?>
             </li>
             <li>
-              <strong>Wear a facemask if you are sick</strong> – You should wear
-              a facemask when you are around other people (e.g., sharing a room
-              or vehicle) and before you enter a healthcare provider’s
+              <strong><?php echo"$pnp3";?></strong> – <?php echo"$dsc3";?>
             </li>
             <li>
               <strong
-                >Clean AND disinfect frequently touched surfaces daily</strong
+                ><?php echo"$pnp4";?></strong
               >
-              – This includes phones, tables, light switches, doorknobs,
-              countertops, handles, desks, toilets, faucets, and sinks.
+              <?php echo"$dsc4";?>
             </li>
             <li>
-              <strong>Clean the dirty surfaces</strong> – Use detergent or soap
-              and water prior to disinfection.
+              <strong><?php echo"$pnp5";?></strong> – <?php echo"$dsc5";?>
             </li>
             <li>
-              <strong>Stay informed about the local COVID-19 situation</strong>
-              – Get up-to-date information about local COVID-19 activity from
-              <a href="#">public health officials.</a>
+              <strong><?php echo"$pnp6";?></strong>
+              <?php echo"$dsc6";?></a>
             </li>
             <li>
-              <strong>Dedicated, lined trash can</strong> – If possible,
-              dedicate a lined trash can for the ill person. Use gloves when
-              removing garbage bags, and handling &amp; disposing of trash.
+              <strong><?php echo"$pnp7";?></strong> – <?php echo"$dsc7";?>
             </li>
           </ul>
         </div>
@@ -148,8 +86,8 @@
       </div>
     </div>
     <div class="containers">
-      <h4 class="pt-3 text-center follow">Follow steps to wash hands</h4>
-      <span class="whydoi">Why do I need wash hand</span>
+      <h4 class="pt-3 text-center follow"><?php echo"$title3";?></h4>
+      <span class="whydoi"><?php echo"$subtitle2";?></span>
       <!-- handwash -->
       <div class="handwash">
         <!-- h1 -->
@@ -158,7 +96,7 @@
             <img class="handwashimg" src="./images/hand-a.png" alt="" />
           </div>
           <div class="box4-content pt-3">
-            <p>Soap on Hand</p>
+            <p><?php echo"$whst1";?></p>
           </div>
         </div>
         <!-- h2 -->
@@ -167,7 +105,7 @@
             <img class="handwashimg" src="./images/hand-b.png" alt="" />
           </div>
           <div class="box4-content pt-3">
-            <p>Palm to Palm</p>
+            <p><?php echo"$whst2";?></p>
           </div>
         </div>
         <div class="box4">
@@ -175,7 +113,7 @@
             <img class="handwashimg" src="./images/hand-c.png" alt="" />
           </div>
           <div class="box4-content pt-3">
-            <p>Between Fingers</p>
+            <p><?php echo"$whst3";?></p>
           </div>
         </div>
         <div class="box4">
@@ -183,7 +121,7 @@
             <img class="handwashimg" src="./images/hand-d.png" alt="" />
           </div>
           <div class="box4-content pt-3">
-            <p>Back to Hands</p>
+            <p><?php echo"$whst4";?></p>
           </div>
         </div>
         <div class="box4">
@@ -191,7 +129,7 @@
             <img class="handwashimg" src="./images/hand-e.png" alt="" />
           </div>
           <div class="box4-content pt-3">
-            <p>Clean with Water</p>
+            <p><?php echo"$whst5";?></p>
           </div>
         </div>
         <div class="box4">
@@ -199,7 +137,7 @@
             <img class="handwashimg" src="./images/hand-f.png" alt="" />
           </div>
           <div class="box4-content pt-3">
-            <p>Focus on Wrist</p>
+            <p><?php echo"$whst6";?></p>
           </div>
         </div>
       </div>

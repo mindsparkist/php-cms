@@ -26,15 +26,14 @@ fix Image UpLoaded Feature Devolop
 Fix image path store
 fix admin font offline
 fix open link into a new tab
-admin password hashing
 fix preload
 loading animation on every page
 fix added darkmode
 fix poster desgin for video
 Apostropies Fix
+.php extention hide 
 image uploading problem 
 fix about us a picture add 
-.php extention hide 
 make website responsive
 Use WebPack For Converting Multiple Js Files To One Js File 
 how to use gitignore
