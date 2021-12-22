@@ -15,7 +15,9 @@
       <div class="shell1">
         <div id="top">
           <h1>Admin Panel</h1>
-          <div id=top-navigation><p>Welcome Administrator</p><a href=logout.php>Log out</a> </div>
+          <div id=top-navigation><p>Welcome Administrator</p>
+            <a href=logout.php>Log out</a> 
+          </div>
         </div>
         <div id=navigation>
           <ul>

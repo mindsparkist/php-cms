@@ -20,7 +20,7 @@
                 <div class="content2">
                     <h1><span>stay</span>safe,<span>stay</span>healthy.</h1>
                     <h3><?php echo"$subtitle1";?></h3>
-                    <a href="#"><button class="btn">learn more</button></a>
+                    <a href="/MinorProject_Demo/comming_soon.php"><button class="btn">learn more</button></a>
                 </div>
             </div>
         </div>

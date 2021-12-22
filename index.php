@@ -24,7 +24,6 @@
                 preload="auto"
                 width="800"
                 height="500"
-                poster="images/apollo.jpg"
                 data-setup="{}"
             >
             <source src="video/covid19_video.mp4" type="video/mp4" />
