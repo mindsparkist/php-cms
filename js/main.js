@@ -1,8 +1,8 @@
 // loader
 
- $(window).on("load", function () {
-   $(".loader-container").fadeOut(5000);
- });
+ // $(window).on("load", function () {
+ //   $(".loader-container").fadeOut(5000);
+ // });
 
  // toggle
  function myFunction() {

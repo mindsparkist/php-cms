@@ -119,31 +119,6 @@
 .icon {
   display: none;
 }
-@media screen and (max-width: 1130px) {
-  .navbar{
-    display: none;
-  }
-  .icon {
-    float: right;
-    display: block;
-    font-size: 32px;
-    color: #ea5352;
-  }
-}
-@media screen and (max-width: 1130px) {
-    .navbar.responsive{
-        display: block;
-    }
-    .header .navbar ul{
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin: 20px;
-    }
-  .header .navbar ul li a {
-    margin-bottom: 20px;
-  }
-}
 /* home section */
 
 .home{
