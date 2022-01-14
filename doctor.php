@@ -60,19 +60,22 @@
     <div class="about-para"><p>'Our <span>Gallery</span>'</p></div>
             <div class="gallery-content">
                 <div class="gallery-content1">
+
                     <div class="images">
-                    <a href="images/gallery1.jpg" data-lightbox="image-1" data-title="My caption">
-                    <img src="images/gallery1.jpg"  alt="">
-                    </div>
-                    </a>
+                      <a href="images/gallery1.jpg" data-lightbox="image-1" data-title="My caption">
+                      <img src="images/gallery1.jpg"  alt=""></div></a>
+
                     <div class="images">
                         <a href="images/gallery2.jpg" data-lightbox="image-1" data-title="My caption">
                         <img src="images/gallery2.jpg" alt=""></div></a>
+
                     <div class="images">
                         <a href="images/gallery3.jpg" data-lightbox="image-1" data-title="My caption">
                         <img src="images/gallery3.jpg" alt=""></div></a>
                 </div>
+
                 <div class="gallery-content1">
+
                     <div class="images">
                         <a href="images/gallery4.jpg" data-lightbox="image-1" data-title="My caption">
                         <img src="images/gallery4.jpg" alt=""></div></a>

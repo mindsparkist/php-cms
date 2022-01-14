@@ -36,8 +36,6 @@
                 <li><a href="contact.php" class="<?php if($page=='contact'){echo 'act_cls';}?>">Contact</a></li>
             </ul>
         </nav>
-         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
         </a>
     </header>
     <!-- header section end -->

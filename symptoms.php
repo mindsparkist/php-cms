@@ -137,13 +137,14 @@
         </div>
       </div>
     </div>
-    <!-- Accordian -->
+    
     <!-- Common questions -->
     <div class="relative">
       <p class="headine txt-cen1">
         <i class="fas fa-exclamation-triangle"></i>
         <?php echo"$title4";?>
       </p>
+      <!-- Accordian -->
       <div class="container-sm">
         <div class="wrapper-accordian">
           <button class="toggle-accordian">
@@ -174,6 +175,7 @@
         </div>
       </div>
     </div>
+
 <?php
      include 'partials/footer.php';
 ?>

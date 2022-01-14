@@ -12,8 +12,8 @@
 
       if (isset($_FILES['img2'])) {
         $file_name1 = $_FILES['img2']['name'];
-        $file_tmp = $_FILES['img2']['tmp_name'];
-        move_uploaded_file($file_tmp,"upload/".$file_name1);
+        // $file_tmp = ;
+        move_uploaded_file($_FILES['img2']['tmp_name'],"upload/".$file_name1);
       } 
 
       $title1 = $_POST['title1'];

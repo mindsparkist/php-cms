@@ -76,15 +76,39 @@ $db='cpdms';
 <?php
 
     if(isset($_POST['submit'])){
-        $Name=$_POST['name'];
-        $Age=$_POST['age'];
-        $Email=$_POST['email'];
-        $Mobile=$_POST['mobile'];
+        $Name=htmlspecialchars(stripslashes(trim($_POST['name'])));
+        $Age=htmlspecialchars(stripslashes(trim($_POST['age'])));
+        $Email=htmlspecialchars(stripslashes(trim($_POST['email'])));
+        $Mobile=htmlspecialchars(stripslashes(trim($_POST['mobile'])));
         $Symptoms=$_POST['symptoms'];
         $Chkstr=implode(",",$Symptoms);
-        $Comments=$_POST['comments'];
+        $Comments=htmlspecialchars(stripslashes(trim($_POST['comments'])));
 
-        $sql="INSERT INTO `contact`(`name`,`age`,`email`,`mobile`,`symptoms`,`comments`) VALUES ('$Name','$Age','$Email','$Mobile','$Chkstr','$Comments')";
-        $result=mysqli_query($conn,$sql);
+        $name_error;
+        $Age_error;
+        $email_error;
+        $message_error;
+
+        if(!preg_match("/^[A-Za-z .'-]+$/", $Name)){
+         $name_error = 'Invalid name';
+          echo '<script>alert("Invalid name")</script>';
+        }
+        if (!preg_match("/^[0-9]+$/", $Age)){
+          $Age_error = 'Invalid  Age';
+          echo '<script>alert("Invalid Age")</script>';
+        }
+        if(!preg_match("/^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/", $Email)){
+          $email_error = 'Invalid email';
+          echo '<script>alert("Invalid Email Address")</script>';
+        }
+        if(strlen($Comments) === 0){
+         $message_error = 'Your message should not be empty';
+          echo '<script>alert("Message Is Empty")</script>';
+        }
+
+        if (!isset($name_error) && !isset($Age_error) && !isset($email_error) && !isset($message_error)) {
+    $sql="INSERT INTO `contact`(`name`,`age`,`email`,`mobile`,`symptoms`,`comments`) VALUES ('$Name','$Age','$Email','$Mobile','$Chkstr','$Comments')";
+    $result=mysqli_query($conn,$sql);
+        } 
     }
 ?>

@@ -90,7 +90,7 @@ p{
   <ul class="cards">
     <li class="cards_item">
       <div class="card">
-        <div class="card_image"><img src="https://picsum.photos/500/300/?image=5"></div>
+        <div class="card_image"><img src="./images/my-img.jpg"></div>
         <div class="card_content">
           <h2 class="card_title">Shuvradip Chakraborty</h2>
           <p class="card_text">Shuvradip Chakraborty co-lead the Minnor Project team, with Mainak predominantly overseeing and managing the UI/UX and design aspects of The  projects.</p>
@@ -122,7 +122,7 @@ Partner, Head of Documentation & Analyst writting . Extensive history and produc
     </li>
     <li class="cards_item">
       <div class="card">
-        <div class="card_image"><img src="https://picsum.photos/500/300/?image=14"></div>
+        <div class="card_image"><img src="./images/siban.jpeg"></div>
         <div class="card_content">
           <h2 class="card_title">Sibendu Gosh</h2>
           <p class="card_text">Head of  Service. Long history of HTML  and CSS devopment. Project management .</p>
