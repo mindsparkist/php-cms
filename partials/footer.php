@@ -61,6 +61,7 @@
     <!-- vido -->
     <script src="js/video.min.js"></script>
     <!-- custom script -->
+    <script src="js/video.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

@@ -77,3 +77,4 @@ $("button").click(function (e) {
   map.setCenter(location);
   marker.setPosition(location);
 });
+// video js
