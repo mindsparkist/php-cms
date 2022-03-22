@@ -56,7 +56,7 @@
                         })
                         return false;  
                     }  
-                    if(id!="admin" && ps!="admin"){
+                    if (id!="admin" && ps!="admin") {
                          Swal.fire({
                           icon: 'error',
                           title: 'Field Empty',

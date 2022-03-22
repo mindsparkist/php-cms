@@ -24,17 +24,18 @@ fix Doctor Image Change
 browse botton ar lekha change
 fix Image UpLoaded Feature Devolop
 Fix image path store
+fix admin font offline
+fix open link into a new tab
+fix preload
+loading animation on every page
+fix added darkmode
+fix poster desgin for video
 Apostropies Fix
 .php extention hide 
-preload
-darkmode
-how to use gitignore
+image uploading problem 
+fix about us a picture add 
+make website responsive
 Use WebPack For Converting Multiple Js Files To One Js File 
+how to use gitignore
 dynamically update links of domain and foldername
---------------------------------------------
-RewriteEngine on
-RewriteCond %{THE_REQUEST} /([^.]+)\.php [NC]
-RewriteRule ^ /%1 [NC,L,R]
-
-RewriteCond %{REQUEST_FILENAME}.php -f
-RewriteRule ^ %{REQUEST_URI}.php [NC,L]
+-----------------------------------------------------------

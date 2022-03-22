@@ -2,11 +2,6 @@ body{
 	line-height: 1.5;
 	font-family: 'Poppins', sans-serif;
 }
-*{
-	margin:0;
-	padding:0;
-	box-sizing: border-box;
-}
 .container{
 	max-width: 1170px;
 	margin:auto;
@@ -20,6 +15,7 @@ ul{
 }
 .footer{
 	background-color: #FF4F5B;
+	isolation: isolate;
 }
 .footer-col{
    width: 25%;

@@ -86,7 +86,8 @@ ol.gradient-list > li::before,
 ol.gradient-list > li {
   -webkit-box-shadow: 0.25rem 0.25rem 0.6rem rgba(0, 0, 0, 0.05), 0 0.5rem 1.125rem rgba(75, 0, 0, 0.05);
     box-shadow: 0.25rem 0.25rem 0.6rem rgba(0, 0, 0, 0.05), 0 0.5rem 1.125rem rgba(75, 0, 0, 0.05);
-}
+    isolation: isolate;
+  }
 
 
 ol.gradient-list {
@@ -94,6 +95,7 @@ ol.gradient-list {
   list-style: none;
   margin: 1.75rem 0;
   padding-left: 1rem;
+  isolation: isolate;
 }
 ol.gradient-list > li {
   border-radius: 0 0.5rem 0.5rem 0.5rem;
@@ -102,6 +104,7 @@ ol.gradient-list > li {
   min-height: 3rem;
   padding: 1rem 1rem 1rem 3rem;
   position: relative;
+  isolation: isolate;
 }
 ol.gradient-list > li::before,
  ol.gradient-list > li::after {
@@ -115,6 +118,7 @@ ol.gradient-list > li::before,
   position: absolute;
   top: -1rem;
   width: 3rem;
+  isolation: isolate;
 }
 ol.gradient-list > li::before {
   -webkit-box-align: end;
@@ -132,6 +136,7 @@ ol.gradient-list > li::before {
           justify-content: flex-end;
   padding: 0.125em 0.25em;
   z-index: 1;
+  isolation: isolate;
 }
 .btn-primary{
   background-color: rgba(217, 30, 24, 1); /* Green */
