@@ -1,4 +1,4 @@
-# php-cms
+# PHP-CMS
 
 ABSTRACT
 COVID-19 Portal is envelope non-segmented positive Sense RNA viruses belonging to family Coronaviridae. On the Whole the objective of the project is to aware people about Coronavirus. It provide information about preventive method, Symptoms, precaution e.t.c. Apart from this there will be an Admin module for this to make changes to the database Content.
